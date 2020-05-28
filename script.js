@@ -9,7 +9,7 @@ form.addEventListener('submit', (d) => {
     let messages = []
     let clearMessage = []
     if (username.value == 'user' && password.value == 'user') {
-        messages.push('It works')
+        messages.push('It works!')
 
         if (messages.length > 0) {
             d.preventDefault()
@@ -20,7 +20,7 @@ form.addEventListener('submit', (d) => {
         }
     }
     else if (username.value == 'admin' && password.value == 'admin') {
-        messages.push('It works')
+        messages.push('It works!')
         if (messages.length > 0) {
             d.preventDefault()
             admin.innerText = messages.join(', ')
